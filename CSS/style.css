@@ -1,0 +1,130 @@
+/* dla wszystkich elementow, dla wszystkich elementow przed zmiana i po zmianie, default css properties */
+
+*, *::before, ::after{
+    /* border box oznacza ze na stale wszystko jest wkladane do srodka box (padding i border), normalnie jest to na zewnatrz */
+    box-sizing: border-box;
+}
+
+
+body {
+    /* dla wszystkich warto to ustawic */
+    margin: 0;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-size: 16px;
+}
+
+
+a{
+    /* wszystkie linki wlasciwosci */
+    text-decoration: none;
+    color:none;
+
+}
+img {
+    /* żeby obrazki sie nie powiekszyly bardziej zawsze to trzeba dla bezpieczenstwa ustawic */
+    max-width: 100%;
+    /* żeby były proporcjonalne */
+    height: auto;
+
+}
+/* container */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    /* wysrodkuj element zawsze oznacza auto powyzej */
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 0 0 35px darkgray;
+
+
+}
+
+
+/* header */
+
+header{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 15px;
+
+}
+/* brand */
+
+.brand a, .brand img {
+    display: block;
+}
+
+/* menu */
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    margin:0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: black;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: block;
+}
+/* co sie stanie jak najedzie sie na link */
+nav a:hover{
+    background:black;
+    color: white;
+}
+/* slider */
+
+.slider img {
+    display: block;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: space-between;
+
+}
+/* articke */
+
+article {
+    width: 70%;
+    padding: 30px;
+}
+/* aside */
+
+aside {
+    width:30%;
+    padding: 20px;
+    background-color: lightgray;
+    border-left: 1px solid darkgray;
+}
+.widget {
+    margin-bottom: 40px;
+
+}
+.widget ul {
+    list-style-type: square;
+    padding: 0 0 0 18px;
+    margin: 0;
+}
+.widget li {
+    margin-bottom: 15px;
+}
+/* footer */
+
+footer {
+    background-color: lightgray;
+    border-top: 1px solid darkgray;
+    text-align: center;
+    padding:22px 15px;
+}
+footer p {
+    margin: 0;
+}
